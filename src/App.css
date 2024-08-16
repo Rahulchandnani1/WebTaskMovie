@@ -1,0 +1,96 @@
+body {
+  background: #141414;
+  color: #ffffff;
+  padding: 40px;
+
+}
+
+.movie-app>.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterbox{display: flex;}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.favouriteblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    margin-right: 20px;
+  }
+}
+
+.image-container {
+  margin-bottom: 40px;
+  margin-right: 40px;
+  padding: 15px;
+  position: relative;
+  transition: transform 0.2s;
+  width: 250px;
+  border: 2px solid #F5F5F5;
+
+  img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.form-control {
+  padding: 10px;
+  border: 4px solid rgb(13, 236, 102);
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(25, 223, 6, 0.838);
+  width: 100%;
+  left: 0px;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  z-index: 2;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+
+  span {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:700px) {
+  header{
+    flex-direction: column !important;
+  }
+  input{width: 70%;}
+}
